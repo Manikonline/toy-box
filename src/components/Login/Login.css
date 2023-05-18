@@ -1,9 +1,24 @@
 .btn-color{
     background-color: #31B3D9;
 }
+.btn-color:{
+    border: 1px solid #31B3D9;
+}
 .new-user-btn{
-    color: blue;
+    color: #31B3D9;
 }
 .new-user-btn:hover{
-    color:#31B3D9
+    color:#bfe3ee
+}
+.googleLogin{
+    background-color:#233040 ;
+    border-radius: 10px;
+}
+.inline-flex{
+    border: 1px solid #31B3D9 ;
+    padding: 8px;
+    border-radius: 5px;
+}
+.inline-flex:hover{
+    background-color: #31B3D9;
 }

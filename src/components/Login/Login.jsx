@@ -61,8 +61,11 @@ const Login = () => {
     return (
         <div >
             <div className="hero min-h-screen bg-base-200">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                <div className="my-9 ">
+                    <div className="text-center ">
+                        <h1 className="text-2xl mt-1 font-bold">Login Now!</h1>
+                    </div>
+                    <div className="card w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">
@@ -75,7 +78,7 @@ const Login = () => {
                                     <span className="label-text text-white">Password</span>
                                 </label>
                                 <input type="password" name='password' placeholder="password" className="text-black input input-bordered" required />
-                                
+
                             </div>
                             <div>
                                 {error.message}
@@ -85,19 +88,22 @@ const Login = () => {
                             </div>
 
                             <label className="label">
-                                    <p>New User?<Link className='new-user-btn' to='/registration'>Registration</Link> here.</p>
-                                </label>
+                                <p>New User?<Link className='new-user-btn' to='/registration'>Registration</Link> here.</p>
+                            </label>
                         </form>
+                   
                     </div>
+
+                    <div className='mt-3 text-center googleLogin text-white'>
+                            <p className=''>Or</p>
+                            <h5 >Login With</h5>
+                            <div className='py-5 '>
+                                <button onClick={handleGoogleLogin} className="button mb-2 inline-flex " ><FaGoogle className='mt-1 me-1' /> Login with Google</button>
+                            </div>
+                        </div>
                 </div>
 
-                <div className='mt-3 text-center'>
-                    <p className=''>Or</p>
-                    <h5 >Login With</h5>
-                    <div className='py-5'>
-                        <button onClick={handleGoogleLogin} className="button mb-2" ><FaGoogle /> Login with Google</button>
-                    </div>
-                </div>
+
             </div>
         </div>
     );
