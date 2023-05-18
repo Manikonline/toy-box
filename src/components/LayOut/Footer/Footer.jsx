@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import './Footer.css'
-import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
+import { FaFacebookSquare,FaMapMarkerAlt, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -31,7 +31,7 @@ const Footer = () => {
 <footer className="footer px-10 py-4 border-t  text-white border-base-300">
   <div className="items-center grid-flow-col">
      <img className="width='24' height='24' viewBox='0 0 24 24' img-fluid rounded-full " src="../../../../public/rsz_logo.png" alt="" />
-    <p><Link to='/' className="font-bold text-white">TOY BOX</Link> Industries Ltd. <br/><p>Location: Dhaka, Bangladesh</p> <p className="text-muted mt-2"> Copyright &copy;<a className="text-decoration-none text-info " ><b> <Link>TOY BOX</Link></b></a> Company Ltd. All Rights Reserved  </p> </p>
+    <p><Link to='/' className="font-bold text-white">TOY BOX</Link> Industries Ltd. <br/><p className="flex"><span className="mt-1"><FaMapMarkerAlt></FaMapMarkerAlt></span><span className="ms-1"> Dhaka, Bangladesh</span></p> <p className="text-muted mt-2"> Copyright &copy;<a className="text-decoration-none text-info " ><b> <Link>TOY BOX</Link></b></a> Company Ltd. All Rights Reserved  </p> </p>
   </div> 
   <div className="sm:place-self-center  md:justify-self-end">
     <div className="grid grid-flow-col gap-4">
