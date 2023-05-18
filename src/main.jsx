@@ -14,6 +14,8 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Login from './components/Login/Login';
 import AuthProvider from './components/Providers/AuthProvider';
 import Registration from './components/Registration/Registration';
+import AddAToy from './components/AddAToy/AddAToy';
+import MyToys from './components/MyToys/MyToys';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
         element:<AllToy></AllToy>
       },
       {
+        path:'addatoy',
+        element:<AddAToy></AddAToy>
+      },
+      {
+        path:'mytoys',
+        element:<MyToys></MyToys>
+      },
+      {
         path:'blog',
         element:<Blog></Blog>
       },
@@ -40,6 +50,7 @@ const router = createBrowserRouter([
         path:'registration',
         element:<Registration></Registration>
       }
+     
     ]
   },
 ]);

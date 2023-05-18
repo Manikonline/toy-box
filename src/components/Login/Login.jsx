@@ -51,6 +51,7 @@ const Login = () => {
             }).catch((error) => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
+                setError(errorMessage)
 
             });
 
@@ -80,8 +81,8 @@ const Login = () => {
                                 <input type="password" name='password' placeholder="password" className="text-black input input-bordered" required />
 
                             </div>
-                            <div>
-                                {error.message}
+                            <div className='text-red-600'>
+                                {error}
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-color">Login</button>

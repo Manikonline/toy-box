@@ -71,6 +71,9 @@ const Registration = () => {
           </label>
           <input type="text"name="photo" placeholder="Photo URL" className=" text-black input input-bordered" required/>
         </div>
+        <div className='text-red-600'>
+          {error}
+        </div>
         <div className="form-control mt-6">
           <button className="btn btn-color ">Registration</button>
         </div>
