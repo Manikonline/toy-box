@@ -4,7 +4,7 @@ import { useContext, useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider } from 'firebase/auth';
 import { AuthContext } from '../Providers/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 
 
@@ -13,7 +13,11 @@ import './Login.css'
 
 const Login = () => {
     const { signIn, googleLogin } = useContext(AuthContext)
+   
     const [error, setError] = useState('')
+    const navigate=useNavigate()
+    const location=useLocation()
+    const from=location?.state?.from?.pathname ||'/'
 
 
     const handleLogin = event => {
@@ -29,6 +33,7 @@ const Login = () => {
             .then(result => {
                 const loggedUser = result.user;
                 console.log(loggedUser);
+                navigate(from,{replace:true})
 
 
             })
@@ -46,6 +51,7 @@ const Login = () => {
                 const credential = GoogleAuthProvider.credentialFromResult(result);
 
                 const user = result.user;
+                navigate(from, {replace:true})
 
 
             }).catch((error) => {

@@ -16,6 +16,7 @@ import AuthProvider from './components/Providers/AuthProvider';
 import Registration from './components/Registration/Registration';
 import AddAToy from './components/AddAToy/AddAToy';
 import MyToys from './components/MyToys/MyToys';
+import PrivateRoute from './components/Route/PrivateRoute';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,11 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path:'addatoy',
-        element:<AddAToy></AddAToy>
+        element:<PrivateRoute><AddAToy></AddAToy></PrivateRoute>
       },
       {
         path:'mytoys',
-        element:<MyToys></MyToys>
+        element:<PrivateRoute><MyToys></MyToys></PrivateRoute>
       },
       {
         path:'blog',
