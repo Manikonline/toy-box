@@ -1,0 +1,21 @@
+.carousel{
+    height: 450px;
+}
+.btn-color{
+    background-color:#31B3D9 ;
+    color: #233040;
+}
+.btn-color:hover{
+    background-color:#233040 ;
+    color:#31B3D9  ;
+}
+.title{
+    color:#31B3D9 ;
+}
+.descriptiton{
+    border: 2px solid #e6eef8;
+    padding: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    color: rgb(117, 110, 110);
+}
