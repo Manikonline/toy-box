@@ -1,0 +1,17 @@
+.btn-style{
+    background-color: #31B3D9;
+    border: none;
+    border-radius: 10px;
+}
+.btn-style:hover{
+    background-color: #31B3D9;
+    border: none;
+    color: #233040;
+}
+.all-data{
+ background-color: aliceblue;
+ border: 2px solid rgb(238, 234, 234);
+ border-radius: 15px;
+ 
+ 
+}

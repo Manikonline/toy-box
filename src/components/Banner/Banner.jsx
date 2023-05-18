@@ -46,7 +46,7 @@ const Banner = () => {
   <div id="slide4" className="carousel-item relative w-full">
     <img src="https://i.ibb.co/phLVqDL/car-4-1.jpg" className="w-1/2"  />
     <div className='w-full bg-slate-200'>
-      <div className='md:p-10 sm:p-2'>
+      <div className='md:p-10 sm:p-2 '>
       <h3 className='ms-6 title sm:text-xl md:text-3xl font-bold'>The Magic and Wonder of Car Toys</h3>
          <p className='descriptiton md:mt-20'>Whether used as playtime companions, educational tools, car toys continue to capture the hearts of generations. </p>
       </div>
