@@ -1,9 +1,59 @@
 
 
+import './Blog.css'
+
 const Blog = () => {
     return (
-        <div>
-            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores accusamus soluta, nobis ullam quam totam illum id temporibus. Incidunt error quia aspernatur deleniti, minus rerum, fugiat repellendus iure rem placeat aliquid ex velit blanditiis temporibus dolore ipsam dolorem quasi soluta vitae mollitia quibusdam. Quo dolores eos nulla error, ratione rem corrupti? Optio aliquam blanditiis iste odit, eos eligendi distinctio saepe voluptatem ab maiores! Officia, quae laborum! Rem fuga nam quia libero quasi, amet obcaecati ab ullam cupiditate perferendis dolorem voluptates repudiandae itaque, eius cum vitae voluptatibus consectetur facere impedit laboriosam minima repellendus, laudantium deleniti eum? Fugiat officiis ullam enim eum quas nemo a doloribus, non voluptatibus dolorum commodi, eaque possimus voluptates tenetur harum hic labore et, nihil facilis. Neque dolorum nemo facere consequuntur, enim non, delectus quisquam facilis in excepturi illum, doloribus eligendi tempore odit libero sunt exercitationem qui pariatur blanditiis. Quis accusamus nisi facilis esse tenetur possimus, suscipit, laboriosam autem, rerum laborum vero tempora? Incidunt eum mollitia repellat omnis veniam, sed iusto recusandae rerum veritatis laudantium magni tempore optio cumque, molestiae odio accusantium harum. Officiis fuga dolor tenetur soluta? Quisquam reiciendis ipsam ab veritatis, molestias illo quia velit minus reprehenderit voluptatum laudantium dicta culpa nihil voluptate numquam nisi mollitia, exercitationem similique quos earum. Quaerat sunt possimus quas porro officiis. Accusamus inventore, quam ea in ad laudantium veritatis. Temporibus nam beatae maxime, facere excepturi similique voluptas in quaerat at sint culpa quisquam odit voluptates, perspiciatis tempora iste qui nobis incidunt reiciendis totam? Excepturi, quod inventore? Possimus assumenda molestias quis eius, itaque voluptatum odit magnam ipsam maxime perspiciatis modi totam excepturi recusandae qui inventore quibusdam ea reiciendis labore voluptas, sit atque laboriosam! Praesentium vel at dolores nisi officia vero facere similique quis maiores repudiandae neque veritatis dolor consequatur accusantium totam repellendus voluptas beatae, expedita et blanditiis accusamus. Cupiditate hic nulla autem a id culpa nam minus natus repellat officia maxime in minima qui error repellendus, ipsa unde nostrum quis, tempore dolore, eaque beatae? Quas cupiditate natus optio recusandae tempore? Quis omnis nam excepturi rerum ullam aut sint soluta nostrum. Illo distinctio nam corrupti. Mollitia saepe maxime est, velit vel nihil culpa? Eaque fugit quam consequatur ipsam, est ea eum nisi praesentium commodi vel autem sit maiores maxime natus porro sunt cumque iste voluptas blanditiis ratione optio corporis dicta, accusamus quibusdam. Alias saepe quaerat non pariatur modi. Earum, aperiam praesentium maiores natus iusto tempora dolor temporibus minima, dolores laborum ipsa laudantium saepe, quas minus doloribus accusamus laboriosam cumque? Veritatis fuga a voluptates deserunt, labore eligendi quaerat qui magni obcaecati expedita quasi repellendus, incidunt, atque quisquam. Non architecto dolore tempora provident adipisci laboriosam accusamus. Eaque laboriosam, reiciendis adipisci quae exercitationem nesciunt quisquam aliquid assumenda neque at esse ad vitae. Deserunt, distinctio exercitationem minus ut reiciendis repellat voluptate! Id iusto expedita suscipit error ducimus veritatis earum atque unde deleniti? Ea molestias quam voluptate ipsum sapiente vero architecto saepe amet impedit, officia, dolorem tenetur nostrum veritatis quas itaque officiis consequatur fuga consequuntur recusandae quae aliquam error. Dolores nisi nemo aliquam numquam praesentium sit aperiam.</h2>
+        <div className=''>
+        <p className='text-center f-ask-q text-3xl py-10'>Here are some frequently asked question</p>
+            <div>
+                <div className='grid xl:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
+                    <div className="card edit-card w-100  ">
+                        <div className="card-body">
+                            <h2 className="card-title">1. What is an access token and refresh token? How do they work and where should we store them on the client-side?</h2>
+                            <p className='text-gray-500'>
+                                An access token is a credential that represents the authorization granted to a client application to access specific resources on behalf of a user. A refresh token is used to obtain a new access token without requiring the user to re-authenticate. Both tokens should be securely stored on the client-side, such as in an HTTP-only cookie or secure storage mechanisms like the browser's localStorage or mobile keychain. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className='grid xl:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
+                    <div className="card edit-card w-100  ">
+                        <div className="card-body">
+                            <h2 className="card-title">2. Compare SQL and NoSQL databases?</h2>
+                            <p className='text-gray-500'>
+                                SQL databases are table-based, enforce strict schema, and are suitable for complex queries. NoSQL databases are schema-less, flexible, and designed for horizontal scalability, handling unstructured data, and providing eventual consistency with CAP theorem trade-offs.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className='grid xl:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
+                    <div className="card edit-card w-100  ">
+                        <div className="card-body">
+                            <h2 className="card-title">3. o	What is express js? What is Nest JS ?</h2>
+                            <p className='text-gray-500'>
+                                Express.js is a minimalistic web application framework for Node.js, providing a lightweight set of features for building web applications and APIs.
+
+                                Nest.js is a TypeScript-based framework built on Express.js, offering a modular and structured approach to building scalable server-side applications. It provides features like dependency injection and powerful modules, suitable for complex and enterprise-level applications. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className='grid xl:grid-cols-1 md:grid-cols-1 sm:grid-cols-1'>
+                    <div className="card edit-card w-100  ">
+                        <div className="card-body">
+                            <h2 className="card-title">4. What is MongoDB aggregate and how does it work ?</h2>
+                            <p className='text-gray-500'>
+                            In MongoDB, the aggregate function is used for performing advanced data aggregation operations. It allows  to process and transform documents within a collection using a pipeline of stages. Each stage performs a specific operation, such as filtering, grouping, sorting, or computing aggregates. The pipeline consists of multiple stages that are applied sequentially to the input documents, resulting in a computed output based on the specified operations. It enables complex data manipulations and allows for efficient aggregation of large datasets. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     );
 };
