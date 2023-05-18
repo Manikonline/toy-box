@@ -6,7 +6,17 @@
   .card-body{
    
     border-radius: 10px;
-    background-color:#172554;
-    color:#908340;
+    background-color:#233040;
+    
+  }
+  .card-body{
+    color:white
+  }
+  .f-ask-q{
+    border: 2px solid #233040;
+    padding: 10px;
+    color: #172554;
+    border-radius: 16px;
+    
   }
   

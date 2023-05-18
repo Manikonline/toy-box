@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import './Footer.css'
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 
 
 const Footer = () => {
     return (
         <div className="">
-            <footer className="footer p-10 bg-blue-950 text-white">
+            <footer className="footer p-10  text-white">
   <div>
     <span className="footer-title">Services</span> 
     <a className="link link-hover">Branding</a> 
@@ -27,9 +28,9 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div>
 </footer> 
-<footer className="footer px-10 py-4 border-t bg-blue-950 text-white border-base-300">
+<footer className="footer px-10 py-4 border-t  text-white border-base-300">
   <div className="items-center grid-flow-col">
-     <img className="width='24' height='24' viewBox='0 0 24 24' img-fluid rounded-full " src="../../../../public/rsz_1logo.png" alt="" />
+     <img className="width='24' height='24' viewBox='0 0 24 24' img-fluid rounded-full " src="../../../../public/rsz_logo.png" alt="" />
     <p><Link to='/' className="font-bold text-white">TOY BOX</Link> Industries Ltd. <br/><p>Location: Dhaka, Bangladesh</p> <p className="text-muted mt-2"> Copyright &copy;<a className="text-decoration-none text-info " ><b> <Link>TOY BOX</Link></b></a> Company Ltd. All Rights Reserved  </p> </p>
   </div> 
   <div className="sm:place-self-center  md:justify-self-end">

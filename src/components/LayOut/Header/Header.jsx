@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './Header.css'
 
 const Header = () => {
     return (
@@ -16,8 +17,8 @@ const Header = () => {
       
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"><img className="img-fluid rounded-full"  src="../../../../public/rsz_1logo.png" alt="" /></a>
-    <h2 className="text-white font-extrabold italic">TOY BOX</h2>
+    <a className="btn btn-ghost normal-case text-xl"><img className="img-fluid rounded-full"  src="../../../../public/rsz_logo.png" alt="" /></a>
+    <h2 className="text-white company-name font-extrabold italic">TOY BOX</h2>
   </div>
   <div className="navbar-center hidden lg:flex">
     
