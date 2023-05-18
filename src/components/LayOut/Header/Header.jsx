@@ -22,14 +22,14 @@ const Header = () => {
   </div>
   <div className="navbar-center hidden lg:flex">
     
-      <Link to='/' className="text-white ms-2 font-bold  ">Home</Link>
-      <Link to='/alltoy' className="text-white ms-2 font-bold">All Toy</Link>
-      <Link to='/blog' className="text-white ms-2 font-bold">Blog</Link>
+      <Link to='/' className="text-white ms-2   ">Home</Link>
+      <Link to='/alltoy' className="text-white ms-2 ">All Toy</Link>
+      <Link to='/blog' className="text-white ms-2 ">Blog</Link>
      
    
   </div>
-  <div className="navbar-end">
-    <a className="btn">Get started</a>
+  <div className="navbar-end text-white me-5">
+    <Link to='/login'>Login</Link>
   </div>
 </div>
         </div>
