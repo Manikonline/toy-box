@@ -1,0 +1,9 @@
+.btn-color{
+    background-color: #31B3D9;
+}
+.new-user-btn{
+    color: blue;
+}
+.new-user-btn:hover{
+    color:#31B3D9
+}
