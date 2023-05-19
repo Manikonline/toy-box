@@ -22,7 +22,7 @@ const Banner = () => {
     <div className='w-full bg-slate-200'>
       <div className='md:p-10 sm:p-2'>
       <h3 className='ms-6 title sm:text-xl md:text-3xl font-bold'> Discovering the Excitement of Car Toys</h3>
-         <p className='descriptiton md:mt-20'>Car toys are miniature replicas of real-life vehicles that bring endless joy and excitement to both children and adults alike.</p>
+         <p className='descriptiton md:mt-20'>Car toys are miniature replicas of real-life vehicles that bring excitement to both children and adults alike.</p>
       </div>
      </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -35,7 +35,7 @@ const Banner = () => {
     <div className='w-full bg-slate-200'>
       <div className='md:p-10 sm:p-2'>
       <h3 className='ms-6 title sm:text-xl md:text-3xl font-bold'>Exploring the Joy of Car Toys</h3>
-         <p className='descriptiton md:mt-20'>Car toys are miniature replicas of real-life vehicles that bring endless joy and excitement to both children and adults alike.</p>
+         <p className='descriptiton md:mt-20'>Car toys are miniature replicas of real-life vehicles that bring endless joy to both children and adults alike.</p>
       </div>
      </div>
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
