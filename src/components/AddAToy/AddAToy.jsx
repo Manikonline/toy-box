@@ -8,7 +8,23 @@ const AddAToy = () => {
 
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = (data) => {
+         
+        fetch('http://localhost:5000/addedProduct',{
+            method:"POST",
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result=>{
+            console.log(result)
+        })
+
+        console.log(data)
+
+    }
 
 
 
@@ -80,7 +96,7 @@ const AddAToy = () => {
 
 
 
-                        <br></br><input className="btn submit-btn my-2 ms-1 w-72" type="submit" />
+                        <br></br><input className="btn submit-btn my-2 ms-1 w-72" type="submit" value='Add Toy' />
                     </form>
                 </div>
             </div>
