@@ -1,0 +1,14 @@
+.addAtoy{
+   
+    margin-right: 30px;
+    padding-left: 15px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.text-input{
+    border-radius: 10px;
+}
+.submit-btn{
+    background-color: #233040;
+}
