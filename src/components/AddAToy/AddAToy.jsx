@@ -78,6 +78,7 @@ const AddAToy = () => {
                         />
                         <input
                             className="text-input mt-2 py-3 px-14 px- me-4"
+                            
                             {...register("price")}
                             placeholder="Price"
                             defaultValue=""

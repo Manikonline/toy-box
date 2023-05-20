@@ -9,15 +9,17 @@ import UseTitle from "../../Hooks/UseTitle";
 const MyToys = () => {
   const { user } = useContext(AuthContext)
   const [mytoys, setMytoys] = useState([])
+  const [useNumber, setUsenumber]=useState(1)
+  
   useEffect(() => {
-    fetch(`http://localhost:5000/myToys/${user?.email}`)
+    fetch(`http://localhost:5000/myToys?email=${user?.email}&useNumber=${useNumber}`)
       .then(res => res.json())
       .then(data => {
         console.log(data)
         setMytoys(data)
 
       })
-  }, [user])
+  }, [user,useNumber])
 
   const handleDelete = (_id) => {
     console.log(_id)
@@ -59,8 +61,8 @@ const MyToys = () => {
       <div className="text-center">
         <div className="btn-group py-6 btn-group-vertical  lg:btn-group-horizontal">
          
-          <button className="btn">Ascending</button>
-          <button className="btn">Descending</button>
+          <button className="btn" onClick={()=>setUsenumber(1)}>Ascending</button>
+          <button className="btn" onClick={()=>setUsenumber(-1)}>Descending</button>
         </div>
       </div>
       <div className="overflow-x-auto">
