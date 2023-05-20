@@ -1,6 +1,8 @@
 
+import UseTitle from '../../Hooks/UseTitle';
 import './StartSelling.css'
 const StartSelling = () => {
+    UseTitle('StartSelling')
     return (
         <div className="my-8">
             <div className="flex mx-10  py-12 all-data justify-between px-8">

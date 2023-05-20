@@ -3,6 +3,7 @@ import  { useContext } from 'react';
 import { useState } from 'react';
 import './Registration.css'
 import { AuthContext } from '../Providers/AuthProvider';
+import UseTitle from '../../Hooks/UseTitle';
 
 const Registration = () => {
 
@@ -36,6 +37,8 @@ const Registration = () => {
 
      
   }
+    
+  UseTitle('Registration')
 
     return (
         

@@ -1,7 +1,9 @@
+import UseTitle from '../../Hooks/UseTitle';
 import './WhyYouSell.css'
 import { FaBullhorn, FaDollarSign, FaHeadset, FaWpforms } from "react-icons/fa";
 
 const WhyYouSell = () => {
+    UseTitle('WhyYouSell')
     return (
        <div className='md:my-8 sm:my-3 '>
         <div><h3 className="mt-8 mb-3 md:text-3xl sm:text-1xl ms-8 font-bold text-start section-title">Why You Sell on Toy Box</h3></div>

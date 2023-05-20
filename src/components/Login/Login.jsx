@@ -6,6 +6,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 import { AuthContext } from '../Providers/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
+import UseTitle from '../../Hooks/UseTitle';
 
 
 
@@ -13,6 +14,7 @@ import './Login.css'
 
 const Login = () => {
     const { signIn, googleLogin } = useContext(AuthContext)
+    UseTitle('Login')
    
     const [error, setError] = useState('')
     const navigate=useNavigate()

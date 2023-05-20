@@ -1,11 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 
 import './Details.css'
+import UseTitle from "../../Hooks/UseTitle";
 
 
 const Details = () => {
     const data = useLoaderData();
     console.log(data);
+
+    UseTitle('Details')
     return (
      <div className="details">
            <div className="card lg:card-side bg-base-100 shadow-xl md:m-28">

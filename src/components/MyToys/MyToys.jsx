@@ -3,6 +3,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 import './MyToys.css'
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import UseTitle from "../../Hooks/UseTitle";
 
 
 const MyToys = () => {
@@ -51,6 +52,7 @@ const MyToys = () => {
     })
   }
 
+  UseTitle('MyToys')
 
   return (
     <div>

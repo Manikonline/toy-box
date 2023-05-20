@@ -3,9 +3,11 @@ import './AddAToy.css'
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import Swal from "sweetalert2";
+import UseTitle from "../../Hooks/UseTitle";
 
 const AddAToy = () => {
     const {user}=useContext(AuthContext)
+    UseTitle('Add a Toy')
 
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();

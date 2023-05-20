@@ -1,8 +1,11 @@
 
 
+import UseTitle from '../../Hooks/UseTitle';
 import './Blog.css'
 
 const Blog = () => {
+
+    UseTitle('Blog')
     return (
         <div className=''>
         <p className='text-center f-ask-q font-bold text-3xl m-10 '>Here are some frequently asked question</p>
