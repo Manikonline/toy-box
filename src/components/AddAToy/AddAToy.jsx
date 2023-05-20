@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import './AddAToy.css'
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const AddAToy = () => {
     const {user}=useContext(AuthContext)
@@ -9,6 +10,7 @@ const AddAToy = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data) => {
+
          
         fetch('http://localhost:5000/addedProduct',{
             method:"POST",
@@ -20,6 +22,20 @@ const AddAToy = () => {
         .then(res => res.json())
         .then(result=>{
             console.log(result)
+            if(result.insertedId){
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Your Post has been saved',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+ 
+           }
+                
+         
+                 
+          
         })
 
         console.log(data)
@@ -74,7 +90,7 @@ const AddAToy = () => {
                             <option disabled selected>Select Category</option>
                             <option value="sport_car">sport-car</option>
                             <option value="truck">truck</option>
-                            <option value="polic_car">polic-car</option>
+                            <option value="polic_car">police-car</option>
                         </select>
                         <input
                             className="text-input mt-2 py-3 px-14 px- md:me-4"

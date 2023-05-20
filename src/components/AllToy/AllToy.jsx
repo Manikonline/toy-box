@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
-import AllToyTable from "../AllToyTable/AllToyTable";
-import { Link, useLoaderData } from "react-router-dom";
+import './AllToy.css'
+import { Link } from "react-router-dom";
 
 
 const AllToy = () => {
    const[products,setProducts]=useState([])
+   const [searchText, setSearchText] = useState("");
 
     // const data=useLoaderData()
     // setProducts(data)
@@ -17,10 +18,30 @@ const AllToy = () => {
         })
     },[])
 
+    const handleSearch = () => {
+        fetch(`http://localhost:5000/toySearchBytoyName/${searchText}`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            setProducts(data);
+          });
+      };
+
     return (
         <div>
+            <div>
+              
+            <div className="search-box search-box-edit p-2 text-center">
+          <input
+            onChange={(e) => setSearchText(e.target.value)}
+            type="text"
+            className="p-2"
+          />{" "}
+          <button onClick={handleSearch} className="btn py-2 btn-sm search-btn">Search</button>
+        </div> 
+            </div>
             <div className="overflow-x-auto">
-  <table className="table table-zebra w-full">
+  <table className="table table-zebra  w-full">
    
     <thead>
       <tr>
