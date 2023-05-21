@@ -58,7 +58,7 @@ const AllToy = () => {
       </tr>
     </thead>
       {
-        products.map(product=> <> <tbody>
+        products.slice(0-20).map(product=> <> <tbody>
 
             <tr>
                 
