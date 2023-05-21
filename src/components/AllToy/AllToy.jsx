@@ -13,7 +13,7 @@ const AllToy = () => {
     // const data=useLoaderData()
     // setProducts(data)
     useEffect(()=>{
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://toy-box-server-topaz.vercel.app/allProducts')
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -22,7 +22,7 @@ const AllToy = () => {
     },[])
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/toySearchBytoyName/${searchText}`)
+        fetch(`https://toy-box-server-topaz.vercel.app/toySearchBytoyName/${searchText}`)
           .then((res) => res.json())
           .then((data) => {
             console.log(data);

@@ -14,7 +14,7 @@ const AddAToy = () => {
     const onSubmit = (data) => {
 
          
-        fetch('http://localhost:5000/addedProduct',{
+        fetch('https://toy-box-server-topaz.vercel.app/addedProduct',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

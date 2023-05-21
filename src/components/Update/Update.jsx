@@ -12,7 +12,7 @@ const Update = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data) => {
 
-        fetch(`http://localhost:5000/myToyUpdate/${mytoy._id}`, {
+        fetch(`https://toy-box-server-topaz.vercel.app/myToyUpdate/${mytoy._id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

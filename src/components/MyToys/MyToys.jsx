@@ -12,7 +12,7 @@ const MyToys = () => {
   const [useNumber, setUsenumber]=useState(1)
   
   useEffect(() => {
-    fetch(`http://localhost:5000/myToys?email=${user?.email}&useNumber=${useNumber}`)
+    fetch(`https://toy-box-server-topaz.vercel.app/myToys?email=${user?.email}&useNumber=${useNumber}`)
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -35,7 +35,7 @@ const MyToys = () => {
       if (result.isConfirmed) {
         console.log('deteted')
 
-        fetch(`http://localhost:5000/myToys/${_id}`, { method: 'DELETE' })
+        fetch(`https://toy-box-server-topaz.vercel.app/myToys/${_id}`, { method: 'DELETE' })
           .then(res => res.json())
           .then(data => {
             console.log(data)

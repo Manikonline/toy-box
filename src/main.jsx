@@ -58,13 +58,13 @@ const router = createBrowserRouter([
       {
         path:'productDetails/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/productDetails/${params.id}`)
+        loader:({params})=>fetch(`https://toy-box-server-topaz.vercel.app/productDetails/${params.id}`)
      
       },
       {
         path:'myToyUpdate/:id',
         element:<Update></Update>,
-        loader:({params})=>fetch(`http://localhost:5000/myToyUpdate/${params.id}`)
+        loader:({params})=>fetch(`https://toy-box-server-topaz.vercel.app/myToyUpdate/${params.id}`)
 
       }
      

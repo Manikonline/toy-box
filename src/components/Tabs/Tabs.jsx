@@ -16,7 +16,7 @@ const Tabs = () => {
     console.log(categoryData)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/subProducts?subCategory=${categoryData}`)
+        fetch(`https://toy-box-server-topaz.vercel.app/subProducts?subCategory=${categoryData}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
