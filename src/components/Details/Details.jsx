@@ -12,6 +12,7 @@ const Details = () => {
     return (
      <div className="details ">
            <div className="card lg:card-side bg-base-100 shadow-xl md:m-28">
+            {/* image */}
             <figure><img className="px-10" src={data.image} alt="Album" /></figure>
             <div className="card-body ">
                 <h4><span className="font-bold">ToyName: </span>{data?.toyName}</h4>
